@@ -1,5 +1,8 @@
 # Daftar Beasiswa
 
+**Nama : Afnan Yusuf**
+**NIM  : 21102255**
+
 ## Deskripsi Proyek
 Proyek ini adalah aplikasi berbasis web untuk mempermudah proses pendaftaran dan pengelolaan beasiswa. Pengguna dapat memilih beasiswa yang diinginkan, mengisi formulir pendaftaran, dan mengunggah dokumen pendukung sesuai dengan persyaratan.
 

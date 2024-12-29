@@ -73,7 +73,7 @@ if (move_uploaded_file($_FILES['berkas']['tmp_name'], $target_file)) {
     $save = mysqli_query($conn, $query);
 
     if ($save) {
-        $_SESSION['success'] = "Data Pendaftaran Berhasil Dikirim!";
+        $_SESSION['success'] = "Data Pendaftaran Berhasil Disimpan!";
         header('Location: hasil.php');
         exit();
     } else {

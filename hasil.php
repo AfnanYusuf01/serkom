@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'conn.php';
 
 // Konfigurasi pagination
@@ -49,6 +50,12 @@ $result = mysqli_query($conn, $query);
 
         <div class="card-title-2">Hasil Beasiswa</div>
         <div class="tabel-container">
+        <?php if (isset($_SESSION['success'])): ?>
+                    <div class="success-message">
+                        <p style="color: green;"><?php echo $_SESSION['success']; ?></p>
+                        <?php unset($_SESSION['success']); ?>
+                    </div>
+                <?php endif; ?>
             <table>
                 <tr>
                     <th>No</th>

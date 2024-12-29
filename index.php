@@ -42,14 +42,6 @@ session_start();
                         <?php unset($_SESSION['errors']); ?>
                     </div>
                 <?php endif; ?>
-                
-                <?php if (isset($_SESSION['success'])): ?>
-                    <div class="success-message">
-                        <p style="color: green;"><?php echo $_SESSION['success']; ?></p>
-                        <?php unset($_SESSION['success']); ?>
-                    </div>
-                <?php endif; ?>
-                
                 <?php if (isset($_SESSION['error'])): ?>
                     <div class="error-message">
                         <p style="color: red;"><?php echo $_SESSION['error']; ?></p>
