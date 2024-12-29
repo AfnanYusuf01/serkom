@@ -5,15 +5,15 @@ Proyek ini adalah aplikasi berbasis web untuk mempermudah proses pendaftaran dan
 
 - **Tampilan Register Beasiswa**
 
-![Formulir Pendaftaran](images/form-example.png)
+![Formulir Pendaftaran](images/registrasi.png)
 
 - **Tampilan Hasil Beasiswa**
 
-![Formulir Pendaftaran](images/form-example.png)
+![Formulir Pendaftaran](images/hasil.png)
 
 - **Tampilan Pilih Beasiswa**
 
-![Formulir Pendaftaran](images/form-example.png)
+![Formulir Pendaftaran](images/beasiswa.png)
 
 
 ## Fitur Utama
