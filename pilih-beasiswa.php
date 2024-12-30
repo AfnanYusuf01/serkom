@@ -1,5 +1,3 @@
-<?php session_start(); ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilih Beasiswa</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/beasiswa.css">
 </head>
 
 <body>
     <div class="container">
     <div class="menu-bar">
-            <div class="menu-item">
+        <div class="menu-item active">
                 <a href="pilih-beasiswa.php">Pilih Beasiswa</a>
             </div>
             <div class="menu-item">
@@ -25,26 +24,26 @@
             </div>
         </div>
 
-        <div class="black-bar"></div>
-
         <h2 class="form-title">Pilih Beasiswa</h2>
 
         <div class="beasiswa-container">
             <div class="beasiswa-card">
                 <h3>Beasiswa 1</h3>
-                <p>Deskripsi singkat tentang Beasiswa 1. Syarat dan ketentuan berlaku.</p>
+                <p>Beasiswa unggulan untuk siswa berprestasi. Syarat dan ketentuan berlaku.</p>
+                <a href="daftar.php?beasiswa=1">Daftar</a>
             </div>
             <div class="beasiswa-card">
                 <h3>Beasiswa 2</h3>
-                <p>Deskripsi singkat tentang Beasiswa 2. Syarat dan ketentuan berlaku.</p>
+                <p>Dukungan penuh untuk program pendidikan tinggi. Syarat dan ketentuan berlaku.</p>
+                <a href="daftar.php?beasiswa=2">Daftar</a>
             </div>
             <div class="beasiswa-card">
                 <h3>Beasiswa 3</h3>
-                <p>Deskripsi singkat tentang Beasiswa 3. Syarat dan ketentuan berlaku.</p>
+                <p>Beasiswa khusus untuk bidang seni dan budaya. Syarat dan ketentuan berlaku.</p>
+                <a href="daftar.php?beasiswa=3">Daftar</a>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
