@@ -44,10 +44,10 @@ $ipk = ($_POST['semester'] >= 4) ? 3.4 : 2.9; // IPK otomatis berdasarkan semest
 if (empty($_FILES['berkas']['name'])) {
     $errors[] = "Berkas syarat harus diupload.";
 } else {
-    $allowed_types = ['pdf', 'jpg', 'jpeg', 'png', 'zip'];
+    $allowed_types = ['pdf'];
     $file_ext = strtolower(pathinfo($_FILES['berkas']['name'], PATHINFO_EXTENSION));
     if (!in_array($file_ext, $allowed_types)) {
-        $errors[] = "Berkas harus berupa file dengan format: pdf, jpg, jpeg, png, atau zip.";
+        $errors[] = "Berkas harus berupa file dengan format: pdf.";
     }
 }
 

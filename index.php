@@ -14,7 +14,7 @@ session_start();
 
     <!-- Menggunakan Google Fonts untuk font lebih estetis -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 
 
@@ -65,7 +65,7 @@ session_start();
 
                     <div class="form-item">
                         <label class="form-label" for="nomor_hp">Nomor HP</label>
-                        <input class="form-input" type="text" name="nomor_hp" id="nomor_hp" required maxlength="12">
+                        <input class="form-input" type="number" name="nomor_hp" id="nomor_hp" required maxlength="12">
                     </div>
 
                     <div class="form-item">
@@ -88,11 +88,12 @@ session_start();
                     <div class="form-item">
                         <label class="form-label" for="beasiswa">Pilihan Beasiswa</label>
                         <select class="form-select" name="beasiswa" id="beasiswa" required>
-                            <option value="beasiswa1">Beasiswa 1</option>
-                            <option value="beasiswa2">Beasiswa 2</option>
-                            <option value="beasiswa3">Beasiswa 3</option>
+                            <option value="beasiswa_kip" <?php echo isset($_GET['beasiswa']) && $_GET['beasiswa'] == 'beasiswa_kip' ? 'selected' : ''; ?>>Beasiswa KIP</option>
+                            <option value="beasiswa_akademik" <?php echo isset($_GET['beasiswa']) && $_GET['beasiswa'] == 'beasiswa_akademik' ? 'selected' : ''; ?>>Beasiswa Akademik</option>
+                            <option value="beasiswa_non_akademik" <?php echo isset($_GET['beasiswa']) && $_GET['beasiswa'] == 'beasiswa_non_akademik' ? 'selected' : ''; ?>>Beasiswa Non-Akademik</option>
                         </select>
                     </div>
+
 
                     <div class="form-item">
                         <label class="form-label" for="berkas">Upload Berkas Syarat</label>

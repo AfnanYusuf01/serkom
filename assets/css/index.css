@@ -208,3 +208,15 @@ transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transisi yang halus */
 color: #fff;  /* Warna teks tetap putih */
 font-weight: 700; /* Bold font untuk elemen aktif */
 }
+
+/* Untuk browser berbasis Webkit seperti Chrome, Safari */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Untuk Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
